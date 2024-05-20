@@ -1,0 +1,20 @@
+{
+    "name": "studioraz/magento2-whatsapp-widget",
+    "description": "WhatsApp Widget for Magento 2",
+    "type": "magento2-module",
+    "version": "1.0.0",
+	"license": "OSL-3.0",
+    "require": {
+        "php": "^8.1",
+        "magento/framework": "~103.0",
+        "studioraz/magento2-base": "^1.4.1"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SR\\WhatsAppChat\\": "src"
+        }
+    }
+}

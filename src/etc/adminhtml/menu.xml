@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright © 2023 Studio Raz. All rights reserved.
+  ~ See LICENCE file for license details.
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="SR_CustomerOtpAuth::settings"
+             title="Settings"
+             sortOrder="1000"
+             module="SR_WhatsAppChat"
+             parent="SR_WhatsAppChat::srcustomerauth"
+             action="adminhtml/system_config/edit/section/srwhatsappwidget/"
+             resource="SR_WhatsAppChat::settings"/>
+    </menu>
+</config>
