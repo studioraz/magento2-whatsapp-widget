@@ -4,10 +4,22 @@
         <srwhatsappwidget>
             <general>
                 <enable>0</enable>
-                <phone_number>+9195xxxxxxxx</phone_number>
-                <message>Hello! I am interested in your product</message>
-                <position>bottom-left</position>
-                <rel_px>0px 0px</rel_px>
+                <phone_number />
+                <custom_css><![CDATA[/* modify widget position, size, color as needed. */
+#whatsapp-widget {
+    position: fixed;
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    z-index: 100;
+    bottom: 50px;
+    right: 50px;
+}
+#whatsapp-widget svg {
+    width: 50px;
+}
+]]>
+                </custom_css>
             </general>
         </srwhatsappwidget>
     </default>

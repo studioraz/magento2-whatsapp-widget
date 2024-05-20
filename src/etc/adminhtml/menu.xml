@@ -5,11 +5,17 @@
   -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="SR_CustomerOtpAuth::settings"
+        <add id="SR_WhatsAppChat::srwhatsappwidget"
+             parent="SR_Base::srbase"
+             title="WhatsApp Widget"
+             sortOrder="640"
+             module="SR_WhatsAppChat"
+             resource="SR_WhatsAppChat::srwhatsappwidget"/>
+        <add id="SR_WhatsAppChat::settings"
              title="Settings"
              sortOrder="1000"
              module="SR_WhatsAppChat"
-             parent="SR_WhatsAppChat::srcustomerauth"
+             parent="SR_WhatsAppChat::srwhatsappwidget"
              action="adminhtml/system_config/edit/section/srwhatsappwidget/"
              resource="SR_WhatsAppChat::settings"/>
     </menu>

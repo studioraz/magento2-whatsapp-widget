@@ -1,13 +1,18 @@
 <?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-	<head>
-        <css src="SR_WhatsAppChat::css/whatsapp-chat.css" />
-    </head>
-	<body>
-		<referenceContainer name="before.body.end">
-			<block class="Magento\Framework\View\Element\Template" name="sparsh_whatsappchat"
-                template="SR_WhatsAppChat::button.phtml">
+<!--
+  ~ Copyright © 2024 Studio Raz. All rights reserved.
+  ~ See LICENSE.txt for license details.
+  -->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="Magento\Framework\View\Element\Template" name="studioraz_whatsappchat"
+                   template="SR_WhatsAppChat::widget.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">SR\WhatsAppChat\ViewModel\WidgetViewModel</argument>
+                </arguments>
             </block>
-		</referenceContainer>
-	</body>
+        </referenceContainer>
+    </body>
 </page>

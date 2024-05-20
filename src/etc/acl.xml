@@ -8,8 +8,8 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="SR_Base::srbase">
-                    <resource id="SR_CustomerOtpAuth::srwhatsappwidget" title="WhatsApp Widget" translate="title" sortOrder="640">
-                        <resource id="SR_WhatsAppChat::serttings" title="Settings" translate="title" sortOrder="10" />
+                    <resource id="SR_WhatsAppChat::srwhatsappwidget" title="WhatsApp Widget" translate="title" sortOrder="640">
+                        <resource id="SR_WhatsAppChat::settings" title="Settings" translate="title" sortOrder="10" />
                     </resource>
                 </resource>
             </resource>
