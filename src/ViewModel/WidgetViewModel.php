@@ -32,7 +32,7 @@ class WidgetViewModel implements ArgumentInterface
      *
      * @return string
      */
-    public function getIsEnabled(): bool
+    public function getIsEnabled(): ?bool
     {
         return $this->scopeConfig->getValue(
             'srwhatsappwidget/general/enable',
